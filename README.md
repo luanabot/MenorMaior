@@ -28,23 +28,29 @@ O programa recebe um array de inteiros, percorre seus elementos e determina o ma
 
 ---
 
-## Como executar
+---
 
-### Pré-requisitos
-- Java 17 ou superior instalado
-- IntelliJ IDEA (ou qualquer IDE Java)
+## Exemplo de uso
 
-### Passo a passo
+```java
+int[] valores = {3, 17, -5, 42, 8, 1};
 
-1. Clone o repositório
-```bash
-   git clone https://github.com/seu-usuario/maiormenor.git
+MaiorMenor mm = new MaiorMenor(valores);
+mm.encontrarMaior();
+
+System.out.println("Maior elemento: " + mm.getMaior()); // 42
 ```
 
-2. Abra o projeto no IntelliJ IDEA
+---
 
-3. Localize o arquivo `MaiorMenor.java` dentro da pasta `src`
+## Conceitos aplicados
 
-4. Clique na seta ▶ ao lado do método `main` ou pressione `Shift + F10`
+- Programação Orientada a Objetos (POO)
+- Encapsulamento com atributos `private`
+- Array nativo em Java (`int[]`)
+- Construtores com passagem de parâmetros
+- Métodos getters
+- Estrutura de repetição `for-each`
+- Uso de `Integer.MIN_VALUE` para inicialização segura de comparações
 
-5. Veja o resultado no console:
+---
